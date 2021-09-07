@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-6">
+      <h1>Show Page</h1>
+    </div> 
+    <div class="col-6 ">
+      <%= link_to 'Edit', edit_book_path(@book) , class: "btn btn-outline-primary float-right ml-2" %>
+      <%= link_to 'Back', books_path , class: "btn btn-outline-primary float-right ml-2" %>
+    </div> 
+  </div>
+<div class="page">
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @book.description %>
+</p>
+

@@ -1,0 +1,21 @@
+<div class="sidebar-container">
+  <ul class="sidebar-navigation">
+    <li class="header">Book</li>
+    <li>
+        <%= link_to root_path do %>
+          <i class="fa fa-home" aria-hidden="true"></i> Homepage
+        <% end %>
+    </li>
+    <li>
+       <%= link_to books_path do %>
+          <i class="fa fa-book" aria-hidden="true"></i> Books Listing
+      <% end %>
+    </li>
+    <li class="header">Author</li>
+    <li>
+      <%= link_to authors_path do %>
+          <i class="fa fa-users" aria-hidden="true"></i> Author Listing
+      <% end %>
+    </li>
+  </ul>
+</div>
