@@ -27,7 +27,11 @@
               <%= link_to 'Edit', edit_book_path(book) %> |
               <%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %>
           </td>
-          <td><%= book.authors.pluck(:first_name).join(",") %></td>
+          <td>
+            <% book.authors.pluck(:first_name).each do |author| %>
+              <span class="label label-info"><%= author %></span>
+            <% end %>
+          </td>
         </tr>
       <% end %>
     </tbody>
